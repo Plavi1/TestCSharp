@@ -1,0 +1,15 @@
+﻿@page "/"
+@inherits IndexBase
+
+<PageTitle>Index</PageTitle>
+@if(Employees == null)
+{
+    <span>Loading...</span>
+}
+else
+{
+    @foreach (var employee in Employees)
+    {
+        <div>@employee.EmployeeName</div>
+    }
+}
