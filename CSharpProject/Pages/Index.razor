@@ -1,15 +1,30 @@
 ﻿@page "/"
 @inherits IndexBase
+@using ChartJs.Blazor.PieChart
 
 <PageTitle>Index</PageTitle>
-@if(Employees == null)
+@if(EmployeesViewModel == null)
 {
     <span>Loading...</span>
 }
 else
 {
-    @foreach (var employee in Employees)
+<table class="table">
+  <thead>
+    <tr>
+      <th>Employee Name</th>
+      <th>Total Time Worked (h)</th>
+    </tr>
+  </thead>
+  <tbody>
+    @foreach (var employee in EmployeesViewModel)
     {
-        <div>@employee.EmployeeName</div>
+      <tr class="@((employee.TotalTimeWorked < 100) ? "highlighted" : null)">
+        <td>@employee.EmployeeName</td>
+        <td>@employee.TotalTimeWorked</td>
+      </tr>
     }
+</tbody>
+</table>
+@if(_pieConfig != null){ <Chart Config="_pieConfig" @ref="chartjs"></Chart> }
 }

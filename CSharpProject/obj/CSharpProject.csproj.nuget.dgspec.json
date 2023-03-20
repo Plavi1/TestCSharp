@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\PC\\Desktop\\Testovi\\C# Test\\CSharpProjectTest\\CSharpProject\\CSharpProject.csproj": {}
+    "C:\\Users\\nplavsic\\Desktop\\New folder\\CSharpProject\\CSharpProject.csproj": {}
   },
   "projects": {
-    "C:\\Users\\PC\\Desktop\\Testovi\\C# Test\\CSharpProjectTest\\CSharpProject\\CSharpProject.csproj": {
+    "C:\\Users\\nplavsic\\Desktop\\New folder\\CSharpProject\\CSharpProject.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\PC\\Desktop\\Testovi\\C# Test\\CSharpProjectTest\\CSharpProject\\CSharpProject.csproj",
+        "projectUniqueName": "C:\\Users\\nplavsic\\Desktop\\New folder\\CSharpProject\\CSharpProject.csproj",
         "projectName": "CSharpProject",
-        "projectPath": "C:\\Users\\PC\\Desktop\\Testovi\\C# Test\\CSharpProjectTest\\CSharpProject\\CSharpProject.csproj",
-        "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\PC\\Desktop\\Testovi\\C# Test\\CSharpProjectTest\\CSharpProject\\obj\\",
+        "projectPath": "C:\\Users\\nplavsic\\Desktop\\New folder\\CSharpProject\\CSharpProject.csproj",
+        "packagesPath": "C:\\Users\\nplavsic\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\nplavsic\\Desktop\\New folder\\CSharpProject\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\nplavsic\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -39,14 +39,19 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "dependencies": {
+            "ChartJs.Blazor.Fork": {
+              "target": "Package",
+              "version": "[2.0.2, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
             "net47",
             "net471",
             "net472",
-            "net48",
-            "net481"
+            "net48"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -58,7 +63,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     }
